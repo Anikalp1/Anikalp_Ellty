@@ -1,0 +1,77 @@
+.checkbox-wrapper {
+  width: 25px;
+  height: 25px;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #EEEEEE;
+  border-radius: 6px;
+  background: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Only show checkmark on hover when unchecked */
+.checkbox:hover:not(:checked)::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 12px;
+  border: solid #E3E3E3;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Only show blue shadow on hover and active */
+.checkbox:hover:active:not(:checked) {
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.2);
+}
+
+/* Darker checkmark only on hover and active */
+.checkbox:hover:active:not(:checked)::after {
+  border-color: #878787;
+}
+
+/* Checked state */
+.checkbox:checked {
+  background: #5087F8;
+  border-color: #5087F8;
+}
+
+.checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 12px;
+  border: solid #FFFFFF;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.checkbox:checked:not(:hover) {
+  background: #2469F6;
+  border-color: #2469F6;
+}
+
+.checkbox:checked:hover:active {
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.2);
+  background: #2469F6;
+}
+
+.checkbox::after,
+.checkbox:hover:not(:checked)::after,
+.checkbox:active:not(:checked)::after,
+.checkbox:checked::after {
+  transition: all 0.2s ease-in-out;
+}

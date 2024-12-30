@@ -1,0 +1,52 @@
+/* Add styles for the page container */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.page-selector {
+  width: 370px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0px 8px 15px rgba(20, 20, 20, 0.1),
+              0px 0px 4px rgba(20, 20, 20, 0.1);
+  padding: 15px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selector-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.individual-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.checkbox-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  color: #333333;
+}
+
+.button-container {
+  padding: 0 15px;
+  margin-top: 15px;
+}
