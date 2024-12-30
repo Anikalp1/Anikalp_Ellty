@@ -1,5 +1,6 @@
 .line-dropdown {
-  width: 340px;
+  width: calc(100% - 30px);
+  max-width: 340px;
   height: 0;
   border-top:0.7px solid #CDCDCD;
   margin: 10px 15px;

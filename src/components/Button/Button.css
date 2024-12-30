@@ -1,7 +1,9 @@
 .custom-button {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   height: 40px;
   padding: 10px 20px;
+  margin: 0 auto;
   border: none;
   border-radius: 4px;
   background: #FFCE22;
@@ -15,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   outline: none;
 }
 
